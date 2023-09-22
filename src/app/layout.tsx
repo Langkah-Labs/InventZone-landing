@@ -6,8 +6,8 @@ import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - InventZone',
+    default: 'InventZone - Accounting made simple for small businesses',
   },
   description:
     'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
@@ -39,6 +39,11 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
+      <link
+        rel="icon"
+        href="https://imagizer.imageshack.com/img924/8489/Ul24nu.png"
+        sizes="any"
+      />
       <body className="flex h-full flex-col">{children}</body>
     </html>
   )
