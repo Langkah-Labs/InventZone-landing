@@ -105,7 +105,7 @@ function Plan({
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        Get started
+        Try it today!
       </Button>
     </section>
   )
@@ -123,46 +123,45 @@ export function Pricing() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
+              <span className="relative">Inventzone,</span>
             </span>{' '}
-            for everyone.
+            Inventory Management Pricing
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+            View our pricing options and find one that fits you best
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Starter"
+            name="Starter Plan"
             price="$9"
-            description="Good for anyone who is self-employed and just getting started."
+            description="For businesses that want to experience the product"
             href="/register"
             features={[
-              'Send 10 quotes and invoices',
-              'Connect up to 2 bank accounts',
-              'Track up to 15 expenses per month',
-              'Manual payroll support',
-              'Export up to 3 reports',
+              'Up to 5000 unique codes generated; Access to all 4 of our apps',
+              // 'Connect up to 2 bank accounts',
+              // 'Track up to 15 expenses per month',
+              // 'Manual payroll support',
+              // 'Export up to 3 reports',
             ]}
           />
           <Plan
             featured
-            name="Small business"
+            name="Premium Plan"
             price="$15"
-            description="Perfect for small / medium sized businesses."
+            description="For businesses that have tried and want to continue their inventory management excellence with us"
             href="/register"
             features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
+              'After the creation of 5,000 unique codes, pricing shifts to a per-code generated mode; Access to all 4 of our apps',
+              // 'Connect up to 5 bank accounts',
+              // 'Track up to 50 expenses per month',
+              // 'Automated payroll support',
+              // 'Export up to 12 reports',
+              // 'Bulk reconcile transactions',
+              // 'Track in multiple currencies',
             ]}
           />
-          <Plan
+          {/* <Plan
             name="Enterprise"
             price="$39"
             description="For even the biggest enterprise companies."
@@ -174,7 +173,7 @@ export function Pricing() {
               'Automated payroll support',
               'Export up to 25 reports, including TPS',
             ]}
-          />
+          /> */}
         </div>
       </Container>
     </section>

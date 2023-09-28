@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <CallToAction />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Pricing />
         <Faqs />
       </main>

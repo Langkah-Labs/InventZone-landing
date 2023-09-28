@@ -14,27 +14,27 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Warehouse App',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      'Manage your inventory with ease! Our app lets you input your items and generates unique yet customizable codes, ensuring a well-organized collection.',
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Mobile App',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      'Efficiency meet mobility! Scan, access, and update inventory data right from your smartphone.',
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Report App',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      'From information to impact! Our app extracts intelligence from warehouse and mobile inputs, delivering detailed dashboards tailored for your needs.',
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Vendor App',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Enhance vendor relationships and data accuracy simultaneously. Our app allows vendors to input their inventory directly into your database, making data management a breeze.',
     image: screenshotReporting,
   },
 ]
@@ -76,11 +76,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Discover our apps that will help you manage the goods
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Our four essentials tools we have prepare for your inventory
+            management needs
           </p>
         </div>
         <Tab.Group
