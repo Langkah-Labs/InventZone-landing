@@ -54,12 +54,14 @@ function Plan({
   name,
   price,
   description,
+  divider,
   href,
   features,
   featured = false,
 }: {
   name: string
   price: string
+  divider?: string
   description: string
   href: string
   features: Array<string>
@@ -83,6 +85,7 @@ function Plan({
       </p>
       <p className="order-first font-display text-5xl font-light tracking-tight text-white">
         {price}
+        <span className="text-sm">{divider}</span>
       </p>
       <ul
         role="list"
@@ -134,11 +137,11 @@ export function Pricing() {
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
             name="Starter Plan"
-            price="$9"
+            price="Free"
             description="For businesses that want to experience the product"
             href="/register"
             features={[
-              'Up to 5000 unique codes generated; Access to all 4 of our apps',
+              'Up to 5000 unique codes generated\n Access to all 4 of our apps',
               // 'Connect up to 2 bank accounts',
               // 'Track up to 15 expenses per month',
               // 'Manual payroll support',
@@ -148,11 +151,12 @@ export function Pricing() {
           <Plan
             featured
             name="Premium Plan"
-            price="$15"
+            price="Rp5,000"
+            divider="/serial"
             description="For businesses that have tried and want to continue their inventory management excellence with us"
             href="/register"
             features={[
-              'After the creation of 5,000 unique codes, pricing shifts to a per-code generated mode; Access to all 4 of our apps',
+              'After the creation of 5,000 unique codes, pricing shifts to a per-code generated mode\n Access to all 4 of our apps',
               // 'Connect up to 5 bank accounts',
               // 'Track up to 50 expenses per month',
               // 'Automated payroll support',

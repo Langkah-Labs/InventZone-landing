@@ -31,6 +31,12 @@ export default {
       maxWidth: {
         '2xl': '40rem',
       },
+      screens: {
+        xs: { min: '', max: '420px' },
+        sm: { min: '421px', max: '650px' },
+        md: { min: '651px', max: '1024px' },
+        lg: { min: '1025px', max: '' },
+      },
     },
   },
   plugins: [formsPlugin, headlessuiPlugin],

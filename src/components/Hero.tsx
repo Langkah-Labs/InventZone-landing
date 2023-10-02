@@ -2,17 +2,17 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+// import logoLaravel from '@/images/logos/laravel.svg'
+// import logoMirage from '@/images/logos/mirage.svg'
+// import logoStatamic from '@/images/logos/statamic.svg'
+// import logoStaticKit from '@/images/logos/statickit.svg'
+// import logoTransistor from '@/images/logos/transistor.svg'
+// import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
     <Container className="pb-16 pt-12 text-center lg:pt-12">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      <h1 className="xs:text-3xl mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Scan, Identify, &nbsp;
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -27,7 +27,7 @@ export function Hero() {
         </span>
         &nbsp; Revolutionizing Inventory Asset Management for You!
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      <p className="xs:text-sm mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         From centralized control to on-site surveys, we&apos;re your partner in
         seamless inventory management – providing robust reports for all your
         needs
