@@ -6,53 +6,67 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'What is the Inventory Asset Management System?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'The Inventory Asset Management System is a comprehensive suite of applications designed to help businesses efficiently manage their inventory and assets. It consists of four key applications: Warehouse Web-App, Mobile App, Report Web-App, and Vendor Web-App, each serving a specific purpose in streamlining inventory management.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Is this system customizable to our business needs?',
+      answer:
+        ' Yes, the Inventory Asset Management System is highly customizable. You can tailor it to fit your business’s unique requirements, ensuring that it aligns perfectly with your inventory management processes.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'Can multiple users access these apps simultaneously?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'Yes, these apps are designed to support multiple users. You can have your team collaborate and input data simultaneously to enhance efficiency.',
+    },
+    {
+      question:
+        'Is there a mobile app available for both Android and iOS platforms?',
+      answer:
+        'No, our Mobile App is available only for Android. You can download it from the respective app stores.',
+    },
+    {
+      question: 'What kind of support and training do you offer for users?',
+      answer:
+        'We offer comprehensive training and support to ensure you get the most out of our Inventory Asset Management System. This includes user guides, video tutorials, and responsive customer support to address any questions or issues you may have.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Is there a trial period or demo available for these apps?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'Yes, we offer a trial period and a demo of our Inventory Asset Management System. Contact our sales team to schedule a demo or inquire about a trial period to explore the capabilities of our applications.',
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'How can I get started with the Inventory Asset Management System for my business?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'Getting started is easy! Contact our sales team, and they will guide you through the onboarding process, including customization and training, ensuring a smooth transition to our system.',
     },
     {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+      question: 'What kind of businesses can benefit from this system?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'The Inventory Asset Management System is versatile and can benefit a wide range of businesses, from small retailers to large enterprises. Whether you manage inventory in a warehouse, retail store, or any other settings, our system can help streamline your operations.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'Is my data secure with your system?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'Yes, we take data security seriously. Our system employs industry-standard security measures to protect your data. We use encryption and access controls to ensure the confidentiality and integrity of your information.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question:
+        'Can I integrate this system with my existing software or systems?',
+      answer:
+        'Yes, our system is designed with integration capabilities in mind. We can work with you to integrate it seamlessly with your existing software or systems to ensure a unified and efficient workflow.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question:
+        'Can I request additional features or customizations for the system?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'Absolutely! We understand that businesses have unique needs. We offer the flexibility to request additional features or customizations to ensure that the system aligns perfectly with your operations. Contact our support team to discuss your specific requirements.',
     },
   ],
 ]

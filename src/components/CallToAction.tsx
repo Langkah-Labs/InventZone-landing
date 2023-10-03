@@ -24,7 +24,7 @@ export function CallToAction() {
             Take the first step towards smoother inventory control. Let us help
             make your work easier!
           </p>
-          <Button href="/register" color="blue" className="mt-10">
+          <Button href="/get-started" color="blue" className="mt-10">
             Try it today!
           </Button>
         </div>

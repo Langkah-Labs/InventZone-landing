@@ -88,8 +88,8 @@ function MobileNavigation() {
             <MobileNavLink href="#features">Features</MobileNavLink>
             <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Sign in</MobileNavLink>
+            {/* <hr className="m-2 border-slate-300/40" />
+            <MobileNavLink href="/login">Sign in</MobileNavLink> */}
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -106,7 +106,7 @@ export function Header() {
             <Link href="#" aria-label="Home">
               <Logo className="h-10 w-auto" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            <div className="sm:hidden md:hidden md:gap-x-6 xs:hidden">
               <NavLink href="#features">Apps & Features</NavLink>
               <NavLink href="#testimonials">FAQ</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
@@ -116,12 +116,14 @@ export function Header() {
             {/* <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div> */}
-            <Button href="/register" color="blue">
-              <span>
-                Try it <span className="hidden lg:inline">today!</span>
-              </span>
-            </Button>
-            <div className="-mr-1 md:hidden">
+            <div className="sm:hidden md:hidden xs:hidden">
+              <Button href="/get-started" color="blue">
+                <span>
+                  Try it <span className="hidden lg:inline">today!</span>
+                </span>
+              </Button>
+            </div>
+            <div className="-mr-1 lg:hidden">
               <MobileNavigation />
             </div>
           </div>

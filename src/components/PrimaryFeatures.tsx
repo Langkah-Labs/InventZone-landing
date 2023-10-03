@@ -14,7 +14,7 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Warehouse App',
+    title: 'Warehouse Web-App',
     description:
       'Manage your inventory with ease! Our app lets you input your items and generates unique yet customizable codes, ensuring a well-organized collection.',
     image: screenshotPayroll,
@@ -26,13 +26,13 @@ const features = [
     image: screenshotExpenses,
   },
   {
-    title: 'Report App',
+    title: 'Reporting Web-App',
     description:
       'From information to impact! Our app extracts intelligence from warehouse and mobile inputs, delivering detailed dashboards tailored for your needs.',
     image: screenshotVatReturns,
   },
   {
-    title: 'Vendor App',
+    title: 'Vendor Web-App',
     description:
       'Enhance vendor relationships and data accuracy simultaneously. Our app allows vendors to input their inventory directly into your database, making data management a breeze.',
     image: screenshotReporting,

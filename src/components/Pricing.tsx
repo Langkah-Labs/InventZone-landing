@@ -127,19 +127,19 @@ export function Pricing() {
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
               <span className="relative">Inventzone,</span>
-            </span>{' '}
-            Inventory Management Pricing
+            </span>
+            &nbsp; Inventory Management Pricing
           </h2>
           <p className="mt-4 text-lg text-slate-400">
             View our pricing options and find one that fits you best
           </p>
         </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-2 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
           <Plan
             name="Starter Plan"
             price="Free"
             description="For businesses that want to experience the product"
-            href="/register"
+            href="/get-started"
             features={[
               'Up to 5000 unique codes generated\n Access to all 4 of our apps',
               // 'Connect up to 2 bank accounts',
@@ -154,7 +154,7 @@ export function Pricing() {
             price="Rp5,000"
             divider="/serial"
             description="For businesses that have tried and want to continue their inventory management excellence with us"
-            href="/register"
+            href="/get-started"
             features={[
               'After the creation of 5,000 unique codes, pricing shifts to a per-code generated mode\n Access to all 4 of our apps',
               // 'Connect up to 5 bank accounts',
