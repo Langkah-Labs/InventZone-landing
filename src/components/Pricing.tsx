@@ -134,7 +134,7 @@ export function Pricing() {
             View our pricing options and find one that fits you best
           </p>
         </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-2 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
+        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
           <Plan
             name="Starter Plan"
             price="Free"

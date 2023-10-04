@@ -92,11 +92,11 @@ export function Faqs() {
             id="faq-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
-            Frequently asked questions
+            Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            Find out any details on what you want to know here – your questions,
+            our responses.
           </p>
         </div>
         <ul
