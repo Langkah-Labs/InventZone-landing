@@ -12,7 +12,7 @@ import { Container } from '@/components/Container'
 export function Hero() {
   return (
     <Container className="pb-16 pt-12 text-center lg:pt-12">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-2xl xs:text-2xl">
+      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-3xl xs:text-3xl">
         Scan, Identify, &nbsp;
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
