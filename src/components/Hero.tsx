@@ -12,7 +12,7 @@ import { Container } from '@/components/Container'
 export function Hero() {
   return (
     <Container className="pb-16 pt-12 text-center lg:pt-12">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl xs:text-3xl">
+      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-2xl xs:text-2xl">
         Scan, Identify, &nbsp;
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -27,7 +27,7 @@ export function Hero() {
         </span>
         &nbsp; Revolutionizing Inventory Asset Management for You!
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 xs:text-sm">
+      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 sm:text-xs xs:text-xs">
         From centralized control to on-site surveys, we&apos;re your partner in
         seamless inventory management – providing robust reports for all your
         needs
