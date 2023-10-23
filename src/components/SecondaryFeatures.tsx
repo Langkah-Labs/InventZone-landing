@@ -6,9 +6,9 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import screenshotProcess from '@/images/screenshots/report3rd-app.png'
+import screenshotInventory from '@/images/screenshots/warehouse2nd-app.png'
+import screenshotReport from '@/images/screenshots/report2nd-app.png'
 
 interface Feature {
   name: React.ReactNode
@@ -25,7 +25,7 @@ const features: Array<Feature> = [
       'Our 4 apps is supporting the inventory management process from start to finish.',
     description:
       'With our apps the process from vendor purchase order information, data input & registration, field operations, and reporting is done with ease.',
-    image: screenshotContacts,
+    image: screenshotProcess,
     icon: function ContactsIcon() {
       return (
         <>
@@ -75,7 +75,7 @@ const features: Array<Feature> = [
     summary: 'Stay on top of things with always up-to-date reporting features.',
     description:
       'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
-    image: screenshotProfitLoss,
+    image: screenshotReport,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -123,7 +123,7 @@ function Feature({
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
+          isActive ? 'bg-[#113A5D]' : 'bg-slate-500',
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -133,7 +133,7 @@ function Feature({
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-[#113A5D]' : 'text-slate-600',
         )}
       >
         {feature.name}

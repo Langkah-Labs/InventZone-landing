@@ -18,10 +18,10 @@ export default function Register() {
           <Logo className="h-10 w-auto" />
         </Link>
       </div>
-      <h2 className="mt-2 text-3xl font-bold text-gray-900">
+      <h2 className="mt-2 text-3xl font-bold text-[#113A5D]">
         Kickstart Your Inventory Management
       </h2>
-      <p className="mt-2 text-sm">
+      <p className="mt-2 text-sm text-slate-700">
         The Path to Proficiency in Asset Management
       </p>
       <form
@@ -72,11 +72,23 @@ export default function Register() {
           </option>
         </SelectField>
         <div className="col-span-full mt-4">
-          <Button type="submit" variant="solid" color="blue" className="w-full">
+          {/* <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
               Let&apos;s Start <span aria-hidden="true">&rarr;</span>
             </span>
-          </Button>
+          </Button> */}
+          <Link href="/success" aria-label="Success">
+            <Button
+              type="submit"
+              variant="solid"
+              color="blue"
+              className="w-full"
+            >
+              <span>
+                Let&apos;s Start <span aria-hidden="true">&rarr;</span>
+              </span>
+            </Button>
+          </Link>
         </div>
       </form>
     </SlimLayout>

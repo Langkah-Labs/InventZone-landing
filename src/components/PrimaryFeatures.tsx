@@ -7,17 +7,17 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotExpenses from '@/images/screenshots/mobile-app.png'
+import screenshotWH from '@/images/screenshots/warehouse-app.png'
+import screenshotVendor from '@/images/screenshots/vendor-app.png'
+import screenshotReport from '@/images/screenshots/report-app.png'
 
 const features = [
   {
     title: 'Warehouse Web-App',
     description:
       'Manage your inventory with ease! Our app lets you input your items and generates unique yet customizable codes, ensuring a well-organized collection.',
-    image: screenshotPayroll,
+    image: screenshotWH,
   },
   {
     title: 'Mobile App',
@@ -29,13 +29,13 @@ const features = [
     title: 'Reporting Web-App',
     description:
       'From information to impact! Our app extracts intelligence from warehouse and mobile inputs, delivering detailed dashboards tailored for your needs.',
-    image: screenshotVatReturns,
+    image: screenshotReport,
   },
   {
     title: 'Vendor Web-App',
     description:
       'Enhance vendor relationships and data accuracy simultaneously. Our app allows vendors to input their inventory directly into your database, making data management a breeze.',
-    image: screenshotReporting,
+    image: screenshotVendor,
   },
 ]
 
@@ -66,7 +66,7 @@ export function PrimaryFeatures() {
       className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
     >
       <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
+        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%] brightness-50"
         src={backgroundImage}
         alt=""
         width={2245}
