@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { useId } from 'react'
+import { useId, forwardRef, InputHTMLAttributes } from 'react'
 
 const formClasses =
   'block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm'
@@ -15,23 +15,18 @@ function Label({ id, children }: { id: string; children: React.ReactNode }) {
   )
 }
 
-export function TextField({
-  label,
-  type = 'text',
-  className,
-  ...props
-}: Omit<React.ComponentPropsWithoutRef<'input'>, 'id'> & { label: string }) {
-  let id = useId()
-
+const TextField = forwardRef<
+  HTMLInputElement,
+  InputHTMLAttributes<HTMLInputElement>
+>((props, ref) => {
   return (
-    <div className={className}>
-      {label && <Label id={id}>{label}</Label>}
-      <input id={id} type={type} {...props} className={formClasses} />
-    </div>
+    <input {...props} ref={ref} className={formClasses} name={props.name} />
   )
-}
+})
 
-export function SelectField({
+TextField.displayName = 'TextField'
+
+function SelectField({
   label,
   className,
   ...props
@@ -45,3 +40,5 @@ export function SelectField({
     </div>
   )
 }
+
+export { SelectField, TextField, Label }

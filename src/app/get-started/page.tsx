@@ -4,6 +4,7 @@ import { Button } from '@/components/Button'
 import { SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
+import { RegisterForm } from '@/components/RegisterForm'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -24,73 +25,7 @@ export default function Register() {
       <p className="mt-2 text-sm text-slate-700">
         The Path to Proficiency in Asset Management
       </p>
-      <form
-        action="#"
-        className="mt-6 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2"
-      >
-        <TextField
-          label="Full name"
-          name="full_name"
-          type="text"
-          autoComplete="full-name"
-          required
-        />
-        <TextField
-          label="Company name"
-          name="company_name"
-          type="text"
-          autoComplete="company-name"
-          required
-        />
-        <TextField
-          className="col-span-full"
-          label="Email address"
-          name="email"
-          type="email"
-          autoComplete="email"
-          required
-        />
-        <TextField
-          className="col-span-full"
-          label="Password"
-          name="password"
-          type="password"
-          autoComplete="new-password"
-          required
-        />
-        <SelectField
-          className="col-span-full"
-          label="How did you hear about us?"
-          name="referral_source"
-        >
-          <option>Online Search (e.g., Google, Bing)</option>
-          <option>Word of Mouth (Friend or Family)</option>
-          <option>Trade Show or Event</option>
-          <option>Blog Post or Article</option>
-          <option>
-            Advertisement (Specify Platform, e.g., Google Ads, Facebook Ads)
-          </option>
-        </SelectField>
-        <div className="col-span-full mt-4">
-          {/* <Button type="submit" variant="solid" color="blue" className="w-full">
-            <span>
-              Let&apos;s Start <span aria-hidden="true">&rarr;</span>
-            </span>
-          </Button> */}
-          <Link href="/success" aria-label="Success">
-            <Button
-              type="submit"
-              variant="solid"
-              color="blue"
-              className="w-full"
-            >
-              <span>
-                Let&apos;s Start <span aria-hidden="true">&rarr;</span>
-              </span>
-            </Button>
-          </Link>
-        </div>
-      </form>
+      <RegisterForm />
     </SlimLayout>
   )
 }
