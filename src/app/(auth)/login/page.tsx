@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { Button } from '@/components/Button'
-import { TextField } from '@/components/Fields'
+import { TextField, Label } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
@@ -32,20 +32,19 @@ export default function Login() {
         for a free trial.
       </p>
       <form action="#" className="mt-10 grid grid-cols-1 gap-y-8">
-        <TextField
-          label="Email address"
-          name="email"
-          type="email"
-          autoComplete="email"
-          required
-        />
-        <TextField
-          label="Password"
-          name="password"
-          type="password"
-          autoComplete="current-password"
-          required
-        />
+        <div>
+          <Label id="email">Email address</Label>
+          <TextField name="email" type="email" autoComplete="email" required />
+        </div>
+        <div>
+          <Label id="password">Password</Label>
+          <TextField
+            name="password"
+            type="password"
+            autoComplete="current-password"
+            required
+          />
+        </div>
         <div>
           <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
